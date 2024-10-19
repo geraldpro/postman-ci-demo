@@ -21,7 +21,7 @@ jobs:
       - name: Run API tests
         id: run_tests
         run: |
-          newman run "Platzi Fake Store API.postman_collection.json" --reporters cli,html --reporter-html-export report.html || exit 1
+          newman run "Platzi-fake store.postman_collection.json" --reporters cli,html --reporter-html-export report.html || exit 1
 
       # Debugging step to list files in the directory
       - name: List files for debugging
